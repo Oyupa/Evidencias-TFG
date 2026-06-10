@@ -1,0 +1,43 @@
+user@atacante:~$ ~/attack.sh
+====================================================
+  SIMULACION DE ATAQUE DE ACCESO NO AUTORIZADO
+  Objetivo: 192.168.56.10
+====================================================
+
+[FASE 1] Ataque de fuerza bruta contra 'admin'...
+         (10 intentos con contrasenas comunes)
+  - Intento con contrasena: 123456
+  - Intento con contrasena: password
+  - Intento con contrasena: admin
+  - Intento con contrasena: qwerty
+  - Intento con contrasena: letmein
+  - Intento con contrasena: welcome
+  - Intento con contrasena: password1
+  - Intento con contrasena: 12345678
+  - Intento con contrasena: abc123
+  - Intento con contrasena: monkey
+
+[FASE 2] Password spraying con 'Spring2026!'...
+         (1 contrasena contra 8 usuarios distintos)
+  - Intento contra usuario: administrator
+  - Intento contra usuario: root
+  - Intento contra usuario: user1
+  - Intento contra usuario: user2
+  - Intento contra usuario: test
+  - Intento contra usuario: guest
+  - Intento contra usuario: backup
+  - Intento contra usuario: operator
+
+[FASE 3] Intento de compromiso de 'admin'...
+         (5 fallos seguidos del exito)
+  - Intento fallido con: dragon
+  - Intento fallido con: master
+  - Intento fallido con: qwerty123
+  - Intento fallido con: iloveyou
+  - Intento fallido con: trustno1
+  - Intento con 'Passw0rd!'
+  - Acceso conseguido.
+
+====================================================
+  ATAQUE FINALIZADO
+====================================================

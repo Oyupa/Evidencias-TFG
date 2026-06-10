@@ -1,0 +1,36 @@
+user@victima:~$ sudo python3 ~/detector.py
+[*] Recogiendo logs de SSH desde journalctl...
+[*] Lineas de log recuperadas: 333
+[*] Parseando eventos de autenticacion...
+[*] Eventos relevantes detectados: 27
+[*] Analizando patrones...
+
+======================================================================
+  INFORME DE DETECCION: PATRONES DE ACCESO NO AUTORIZADO
+======================================================================
+  Generado: 2026-06-09T19:56:22.742165
+  Total de detecciones: 3
+======================================================================
+
+[1] FUERZA BRUTA
+    Severidad:       alta
+    IP origen:       192.168.56.20
+    Usuario:         admin
+    Intentos:        17
+    Duracion:        11.95 minutos
+
+[2] PASSWORD SPRAYING
+    Severidad:       alta
+    IP origen:       192.168.56.20
+    Numero usuarios: 9
+    Usuarios:        admin, administrator, backup, guest, operator, root, test, user1, user2
+    Duracion:        11.95 minutos
+
+[3] COMPROMISO EXITOSO
+    Severidad:       critica
+    IP origen:       192.168.56.20
+    Usuario:         admin
+    Fallos previos:  15
+    Compromiso:      2026-06-09T19:34:29.338338
+
+[*] IoCs guardados en: iocs_20260609_195622.json

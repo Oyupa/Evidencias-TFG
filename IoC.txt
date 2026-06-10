@@ -1,0 +1,90 @@
+user@victima:~$ cat ~/iocs_*.json
+{
+  "generado": "2026-06-10T19:12:50.715958",
+  "total_detecciones": 3,
+  "detecciones": [
+    {
+      "patron": "fuerza_bruta",
+      "severidad": "alta",
+      "ip_origen": "192.168.56.20",
+      "usuario_objetivo": "admin",
+      "intentos": 15,
+      "primer_intento": "2026-06-10T19:07:52.166982",
+      "ultimo_intento": "2026-06-10T19:11:08.732745",
+      "duracion_minutos": 3.28
+    },
+    {
+      "patron": "password_spraying",
+      "severidad": "alta",
+      "ip_origen": "192.168.56.20",
+      "usuarios_objetivo": [
+        "admin",
+        "administrator",
+        "backup",
+        "guest",
+        "operator",
+        "root",
+        "test",
+        "user1",
+        "user2"
+      ],
+      "numero_usuarios": 9,
+      "primer_intento": "2026-06-10T19:07:52.166982",
+      "ultimo_intento": "2026-06-10T19:11:08.732745",
+      "duracion_minutos": 3.28
+    },
+    {
+      "patron": "compromiso_exitoso",
+      "severidad": "critica",
+      "ip_origen": "192.168.56.20",
+      "usuario_comprometido": "admin",
+      "fallos_previos": 15,
+      "primer_fallo": "2026-06-10T19:07:52.166982",
+      "hora_compromiso": "2026-06-10T19:11:12.417500"
+    }
+  ]
+}{
+  "generado": "2026-06-10T19:16:39.004042",
+  "total_detecciones": 3,
+  "detecciones": [
+    {
+      "patron": "fuerza_bruta",
+      "severidad": "alta",
+      "ip_origen": "192.168.56.20",
+      "usuario_objetivo": "admin",
+      "intentos": 15,
+      "primer_intento": "2026-06-10T19:07:52.166982",
+      "ultimo_intento": "2026-06-10T19:11:08.732745",
+      "duracion_minutos": 3.28
+    },
+    {
+      "patron": "password_spraying",
+      "severidad": "alta",
+      "ip_origen": "192.168.56.20",
+      "usuarios_objetivo": [
+        "admin",
+        "administrator",
+        "backup",
+        "guest",
+        "operator",
+        "root",
+        "test",
+        "user1",
+        "user2"
+      ],
+      "numero_usuarios": 9,
+      "primer_intento": "2026-06-10T19:07:52.166982",
+      "ultimo_intento": "2026-06-10T19:11:08.732745",
+      "duracion_minutos": 3.28
+    },
+    {
+      "patron": "compromiso_exitoso",
+      "severidad": "critica",
+      "ip_origen": "192.168.56.20",
+      "usuario_comprometido": "admin",
+      "fallos_previos": 15,
+      "primer_fallo": "2026-06-10T19:07:52.166982",
+      "hora_compromiso": "2026-06-10T19:11:12.417500"
+    }
+  ]
+}
